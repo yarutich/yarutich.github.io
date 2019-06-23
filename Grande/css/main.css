@@ -24,6 +24,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+
 .uk-heading-line>::after, .uk-heading-line>::before {
     border-bottom: 1px solid #333;
 }
@@ -51,13 +52,16 @@ body {
 }
 
 .navbar {
-    background: rgba(255, 255, 255, .9);
     padding: 30px 0;
+    z-index: 1;
+}
+
+.navbar-index {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     width: 100%;
+    background: rgba(255, 255, 255, .9);
 }
 
 .uk-navbar-item,
@@ -91,6 +95,10 @@ body {
 }
 
 /* Furniture-sets  */
+.furniture-sets .item {
+    cursor: pointer;
+}
+
 .furniture-sets .item h3 {
     margin: 0;
     padding: 10px 15px;
@@ -118,4 +126,24 @@ body {
 .section-advantage .uk-card {
     border: 1px solid #333;
     margin-bottom: 15px;
+}
+
+.advantages .advantage img {
+    width: 50px;
+}
+
+.advantages .advantage h4 {
+    margin-top: 8px;
+}
+
+
+
+/* Section contacts */
+.section-contacts .phones .phone {
+   margin: 0;
+   margin-right: 40px;
+}
+
+.section-contacts .phones .phone:last-child {
+    margin: 0;
 }
