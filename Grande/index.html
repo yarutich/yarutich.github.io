@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./assets/libs/uikit3/css/uikit.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <a class="order-callback uk-link-reset" href="#order-callback" uk-toggle>Заказать обратный звонок</a>
+    <div id="order-callback" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div class="uk-background-cover" style="background-image: url('./assets/images/order-callback.jpg');" uk-height-viewport></div>
+                <div class="uk-padding-large">
+                    <h1>Headline</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-hero">
+        <div class="navbar">
+            <nav class="uk-container uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="logo" style="line-height: 1;">
+                        <div class="uk-flex" style="font-size: 20px">Grande</div>
+                        <span class="uk-text-meta uk-position-relative">мебель ручной работы</span>
+                    </div>
+                </div>
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="javascript:void(0);">Главная</a></li>
+                        <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">Каталог</a></li>
+                        <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">Блог</a></li>
+                        <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">О компании</a></li>
+                        <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right ">
+
+                    <a href="tel:+3752921234567" class="uk-link-text" style="font-size: 18px;">
+                        +375 (29) 123 45 67
+                        <span uk-icon="chevron-down"></span>
+                    </a>
+
+                    <div uk-dropdown="pos: bottom-center; delay-hide: 200; offset: 20;">
+                        <ul class="uk-list uk-list-divider">
+                            <li>
+                                <span class="uk-display-block uk-text-meta">ВЕЛКОМ:</span>
+                                <a href="tel:+375441234567" class="uk-link-text" style="font-size: 16px;">+375 (44) 123 45 67</a>
+                            </li>
+                            <li>
+                                <span class="uk-display-block uk-text-meta">МТС:</span>
+                                <a href="tel:+3753312345674" class="uk-link-text" style="font-size: 16px;">+375 (33) 123 45 67</a>
+                            </li>
+                            <li>
+                                <span class="uk-display-block uk-text-meta">ГОРОД:</span>
+                                <a href="tel:+3751651234567" class="uk-link-text" style="font-size: 16px;">+375 (165) 123 45 67</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push; max-height: 600">
+
+            <ul class="uk-slideshow-items">
+                <li>
+                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                        <img src="./assets/images/hero-1.jpg" alt="" uk-cover>
+                    </div>
+                    <div class="uk-position-cover"></div>
+                    <div class="uk-position-large uk-position-center-left uk-overlay uk-overlay-default">
+                        <div>
+                            <h1 class="uk-heading-meduim">Мебель ручной работы</h1>
+                            <p>В наличии и под заказ</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-position-cover">
+                        <img src="./assets/images/hero-1.jpg" alt="" uk-cover>
+                    </div>
+                    <div class="uk-position-cover"></div>
+                    <div class="uk-position-center uk-position-medium uk-text-center">
+                        <div>
+                            <h3>Heading</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
+    </div>
+
+    <div class="uk-section furniture-sets">
+        <div class="uk-container">
+            <h1 class="uk-heading-line" style="margin-bottom: 50px;"><span>Комплекты мебели</span></h1>
+            <div class="uk-grid-collapse items" uk-grid>
+                <div class="item uk-width-3-5@m uk-flex uk-flex-bottom uk-height-medium uk-background-cover uk-position-relative" data-src="./assets/images/hero-1.jpg" uk-img>
+                    <div class="uk-flex" style="margin: 20px;">
+                        <h3 class="uk-overlay-default">Комплект-1</h3>
+                        <span class="uk-overlay-default uk-flex uk-flex-center uk-flex-middle" data-uk-icon="icon: chevron-right; ratio: 1.5;" style="width: 50px; margin: 0 10px;"></span>
+                    </div>
+                </div>
+                <div class="item uk-width-expand@m uk-flex uk-flex-bottom uk-height-medium uk-background-cover uk-position-relative" data-src="./assets/images/hero-2.jpg" uk-img>
+                    <div class="uk-flex" style="margin: 20px;">
+                        <h3 class="uk-overlay-default">Комплект-2</h3>
+                        <span class="uk-overlay-default uk-flex uk-flex-center uk-flex-middle" data-uk-icon="icon: chevron-right; ratio: 1.5;" style="width: 50px; margin: 0 10px;"></span>
+                    </div>
+                </div>
+                <div class="item uk-width-1-2@m uk-flex uk-flex-bottom uk-height-medium uk-background-cover uk-position-relative" data-src="./assets/images/hero-2.jpg" uk-img>
+                    <div class="uk-flex" style="margin: 20px;">
+                        <h3 class="uk-overlay-default">Комплект-3</h3>
+                        <span class="uk-overlay-default uk-flex uk-flex-center uk-flex-middle" data-uk-icon="icon: chevron-right; ratio: 1.5;" style="width: 50px; margin: 0 10px;"></span>
+                    </div>
+                </div>
+                <div class="item uk-width-expand@m uk-flex uk-flex-bottom uk-height-medium uk-background-cover uk-position-relative" data-src="./assets/images/hero-1.jpg" uk-img>
+                    <div class="uk-flex" style="margin: 20px;">
+                        <h3 class="uk-overlay-default">Комплект-4</h3>
+                        <span class="uk-overlay-default uk-flex uk-flex-center uk-flex-middle" data-uk-icon="icon: chevron-right; ratio: 1.5;" style="width: 50px; margin: 0 10px;"></span>
+                    </div>
+                </div>
+                <div class="item uk-width-3-5@m uk-flex uk-flex-bottom uk-height-medium uk-background-cover uk-position-relative" data-src="./assets/images/hero-1.jpg" uk-img data-href="#">
+                    <div class="uk-flex" style="margin: 20px;">
+                        <h3 class="uk-overlay-default">Комплект-5</h3>
+                        <span class="uk-overlay-default uk-flex uk-flex-center uk-flex-middle" data-uk-icon="icon: chevron-right; ratio: 1.5;" style="width: 50px; margin: 0 10px;"></span>
+                    </div>
+                </div>
+                <div class="item uk-width-expand@m uk-flex uk-flex-bottom uk-height-medium uk-background-cover uk-position-relative" data-src="./assets/images/hero-2.jpg" uk-img>
+                    <div class="uk-flex" style="margin: 20px;">
+                        <h3 class="uk-overlay-default">Комплект-6</h3>
+                        <span class="uk-overlay-default uk-flex uk-flex-center uk-flex-middle" data-uk-icon="icon: chevron-right; ratio: 1.5;" style="width: 50px; margin: 0 10px;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-section section-advantage">
+        <div class="uk-container">
+            <h1 class="uk-heading-line" style="margin-bottom: 50px;"><span>Компания "Grande" это:</span></h1>
+        </div>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-padding-large">
+                <h2>Связаться с Нами</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="uk-flex uk-flex-middle uk-flex-center">
+                <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-body uk-text-center">
+                            <h4>Только ручная работа</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body uk-text-center">
+                            <h4>Качественные материалы</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body uk-text-center">
+                            <h4>Уникальные позиции</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body uk-text-center">
+                            <h4>Только ручная работа</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body uk-text-center">
+                            <h4>Качественные материалы</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body uk-text-center">
+                            <h4>Уникальные позиции</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="uk-section">
+        <div class="uk-container">
+            <h1 class="uk-heading-line" style="margin-bottom: 50px;"><span>Контактная информация</span></h1>
+        </div>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover uk-height-large" style="background-image: url('./assets/images/section-order-callback.jpg');"></div>
+            <div class="uk-padding-large">
+                <h2>Связаться с Нами</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/libs/uikit3/js/uikit.min.js"></script>
+    <script src="./assets/libs/uikit3/js/uikit-icons.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
