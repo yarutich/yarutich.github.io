@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./assets/libs/uikit3/css/uikit.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <a class="order-callback uk-link-reset" href="#order-callback" uk-toggle>Заказать обратный звонок</a>
+    <div id="order-callback" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div class="uk-background-cover" style="background-image: url('./assets/images/order-callback.jpg');" uk-height-viewport></div>
+                <div class="uk-padding-large">
+                    <h2>Headline</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar uk-card-secondary uk-light">
+        <nav class="uk-container uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="/" class="logo uk-link-reset" style="line-height: 1;">
+                    <div class="uk-flex" style="font-size: 20px">Grande</div>
+                    <span class="uk-text-meta uk-position-relative">мебель ручной работы</span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/katalog.html">Каталог</a></li>
+                    <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">Блог</a></li>
+                    <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">О компании</a></li>
+                    <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right ">
+
+                <a href="tel:+3752921234567" class="uk-link-text" style="font-size: 18px;">
+                    +375 (29) 123 45 67
+                    <span uk-icon="chevron-down"></span>
+                </a>
+
+                <div uk-dropdown="pos: bottom-center; delay-hide: 200; offset: 20;">
+                    <ul class="uk-list uk-list-divider">
+                        <li>
+                            <span class="uk-display-block uk-text-meta">ВЕЛКОМ:</span>
+                            <a href="tel:+375441234567" class="uk-link-text" style="font-size: 16px;">+375 (44) 123 45 67</a>
+                        </li>
+                        <li>
+                            <span class="uk-display-block uk-text-meta">МТС:</span>
+                            <a href="tel:+3753312345674" class="uk-link-text" style="font-size: 16px;">+375 (33) 123 45 67</a>
+                        </li>
+                        <li>
+                            <span class="uk-display-block uk-text-meta">ГОРОД:</span>
+                            <a href="tel:+3751651234567" class="uk-link-text" style="font-size: 16px;">+375 (165) 123 45 67</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="uk-section">
+        <div class="uk-container">
+            <h1 class="uk-heading-line" style="margin-bottom: 50px;"><span>Комплект-1</span></h1>
+
+        </div>
+    </div>
+
+    <script src="./assets/libs/uikit3/js/uikit.min.js"></script>
+    <script src="./assets/libs/uikit3/js/uikit-icons.min.js"></script>
+    <script src="./js/data-href.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
