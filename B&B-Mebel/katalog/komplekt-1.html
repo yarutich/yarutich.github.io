@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../assets/libs/uikit3/css/uikit.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="stylesheet" href="../css/item.css">
+
+</head>
+
+<body>
+
+    <a class="order-callback uk-link-reset" href="#order-callback" uk-toggle>Заказать обратный звонок</a>
+    <div id="order-callback" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                    <div class="uk-background-cover" style="background-image: url('../assets/images/order-callback.jpg');" uk-height-viewport></div>
+                    <div class="uk-padding-large">
+                        <h2>Заказать обратный звонок</h2>
+                        <form class="uk-grid-small uk-margin" uk-grid>
+                            <div class="uk-width-1-2@s">
+                                <label class="uk-form-label" for="form-stacked-text">Имя</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text" placeholder="Введите имя">
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <label class="uk-form-label" for="form-stacked-text">Номер телефона</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-stacked-text" type="text" placeholder="Введите номер телефона">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="navbar uk-card-secondary uk-light">
+        <nav class="uk-container uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="/B&B-Mebel" class="logo uk-link-reset" style="line-height: 1;">
+                    <div class="uk-flex" style="font-size: 20px; color: #fff;">B&B Mebel</div>
+                    <span class="uk-text-meta uk-position-relative" style="color: #aaa;">мебель ручной работы</span>
+                </a>
+            </div>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li><a href="/B&B-Mebel">Главная</a></li>
+                    <li><a href="/B&B-Mebel/katalog.html">Каталог</a></li>
+                    <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">Блог</a></li>
+                    <!-- <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">О компании</a></li> -->
+                    <li><a href="javascript:void(0);" uk-tooltip="title: Страница находится в разработке. Попробуйте позже!; pos: top-bottom">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right ">
+
+                <a href="tel:+3752921234567" class="uk-link-text" style="font-size: 18px;">
+                    +375 (29) 123 45 67
+                    <span uk-icon="chevron-down"></span>
+                </a>
+
+                <div uk-dropdown="pos: bottom-center; delay-hide: 200; offset: 20;">
+                    <ul class="uk-list uk-list-divider">
+                        <li>
+                            <span class="uk-display-block uk-text-meta">ВЕЛКОМ:</span>
+                            <a href="tel:+375441234567" class="uk-link-text" style="font-size: 16px;">+375 (44) 123 45 67</a>
+                        </li>
+                        <li>
+                            <span class="uk-display-block uk-text-meta">МТС:</span>
+                            <a href="tel:+3753312345674" class="uk-link-text" style="font-size: 16px;">+375 (33) 123 45 67</a>
+                        </li>
+                        <li>
+                            <span class="uk-display-block uk-text-meta">ГОРОД:</span>
+                            <a href="tel:+3751651234567" class="uk-link-text" style="font-size: 16px;">+375 (165) 123 45 67</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="uk-section">
+        <div class="uk-container">
+            <h1 class="uk-heading-line" style="margin-bottom: 50px;"><span>Коллекция-1</span></h1>
+
+            <div class="" uk-grid>
+                <div class="uk-width-3-5@s">
+                    <div class="uk-position-relative" uk-slideshow="animation: fade">
+
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="../assets/images/hero-1.jpg" alt="" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../assets/images/hero-2.jpg" alt="" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../assets/images/hero-1.jpg" alt="" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../assets/images/hero-2.jpg" alt="" uk-cover>
+                            </li>
+                            <li>
+                                <img src="../assets/images/hero-1.jpg" alt="" uk-cover>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                        <ul class="uk-thumbnav">
+                            <li class="all" uk-slideshow-item="0"><a href="#"><img src="../assets/images/hero-1.jpg" alt=""></a></li>
+                            <li class="sofa" uk-slideshow-item="1"><a href="#"><img src="../assets/images/hero-2.jpg" alt=""></a></li>
+                            <li class="armchair" uk-slideshow-item="2"><a href="#"><img src="../assets/images/hero-1.jpg" alt=""></a></li>
+                            <li class="table" uk-slideshow-item="3"><a href="#"><img src="../assets/images/hero-2.jpg" alt=""></a></li>
+                            <li class="chair" uk-slideshow-item="4"><a href="#"><img src="../assets/images/hero-1.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-2-5@s">
+                    <ul uk-accordion="multiple: true">
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">Описание</a>
+                            <div class="uk-accordion-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, minus. Voluptatem numquam sequi itaque sit! Minus magni odit itaque commodi obcaecati et repudiandae, illo, tempora quae officia aspernatur tempore necessitatibus.</p>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">Характеристики</a>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list uk-list-divider all-list ">
+                                    <li>Стиль: <span style="color: #333;">Барокко</span></li>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, minus. Voluptatem numquam sequi itaque sit! 
+                                    </p>
+                                </ul>
+                                <ul class="uk-list uk-list-divider sofa-list uk-hidden uk-animation-fast uk-animation-fade">
+                                    <li>Наименование: <span style="color: #333;">Диван</span></li>
+                                    <li>Стиль: <span style="color: #333;">Барокко</span></li>
+                                    <li>
+                                        Габариты:
+                                        <div class="specifications-list">
+                                            <span>Длина: 235 см</span>
+                                            <span>Ширина: 1090 cм</span>
+                                            <span>Высота: 94 cм</span>
+                                        </div>
+
+                                    </li>
+                                    <li>Материал каркаса: <span style="color: #333;">массив дерева; ДСП; фанера</span></li>
+                                </ul>
+
+                                <ul class="uk-list uk-list-divider armchair-list uk-hidden uk-animation-fast uk-animation-fade">
+                                    <li>Наименование: <span style="color: #333;">Кресло</span></li>
+                                    <li>Стиль: <span style="color: #333;">Барокко</span></li>
+                                    <li>
+                                        Габариты:
+                                        <div class="specifications-list">
+                                            <span>Длина: 235 см</span>
+                                            <span>Ширина: 1090 cм</span>
+                                            <span>Высота: 94 cм</span>
+                                        </div>
+
+                                    </li>
+                                    <li>Материал каркаса: <span style="color: #333;">массив дерева; ДСП; фанера</span></li>
+                                </ul>
+
+                                <ul class="uk-list uk-list-divider table-list uk-hidden uk-animation-fast uk-animation-fade">
+                                    <li>Наименование: <span style="color: #333;">Стол</span></li>
+                                    <li>Стиль: <span style="color: #333;">Барокко</span></li>
+                                    <li>
+                                        Габариты:
+                                        <div class="specifications-list">
+                                            <span>Длина: 235 см</span>
+                                            <span>Ширина: 1090 cм</span>
+                                            <span>Высота: 94 cм</span>
+                                        </div>
+
+                                    </li>
+                                    <li>Материал каркаса: <span style="color: #333;">массив дерева; ДСП; фанера</span></li>
+                                </ul>
+
+                                <ul class="uk-list uk-list-divider chair-list uk-hidden uk-animation-fast uk-animation-fade">
+                                    <li>Наименование: <span style="color: #333;">Диван</span></li>
+                                    <li>Стиль: <span style="color: #333;">Барокко</span></li>
+                                    <li>
+                                        Габариты:
+                                        <div class="specifications-list">
+                                            <span>Длина: 235 см</span>
+                                            <span>Ширина: 1090 cм</span>
+                                            <span>Высота: 94 cм</span>
+                                        </div>
+
+                                    </li>
+                                    <li>Материал каркаса: <span style="color: #333;">массив дерева; ДСП; фанера</span></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="../assets/libs/uikit3/js/uikit.min.js"></script>
+    <script src="../assets/libs/uikit3/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
